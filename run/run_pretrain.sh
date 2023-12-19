@@ -1,4 +1,4 @@
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=0,1,2,3
 python -W ignore pretrain.py                    \
  -a lsqmobilenetv2                                 \
  -c checkpoints/lsqmobilenetv2_lr001b64e150_cifar100_w8a8  \
@@ -8,7 +8,7 @@ python -W ignore pretrain.py                    \
  --lr 0.01                                      \
  --wd 1e-4                                   \
  --obs 2000                                 \
- --train_batch 64                              \
+ --train_batch 128                              \
  --workers 32                                   \
  --bits 8                                       \
 #  --half                                         \
