@@ -2,7 +2,7 @@ export CUDA_VISIBLE_DEVICES=0
 python -W ignore pretrain.py                    \
  -a lsqmobilenetv2                                 \
  -c checkpoints/lsqmobilenetv2_lr001b64e150_cifar100_w5a5  \
- --pretrained                                   \
+#  --pretrained                                   \
  --epochs 150                                   \
  --data data/cifar100                           \
  --data_name cifar100                           \
